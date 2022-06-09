@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web App</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('body').classList.toggle('menu-open')
+        };
+
+        function toggleSubmenu(menuLink) {
+            console.log('Coming here?', menuLink);
+            console.log(menuLink.nextSibling.nextSibling);
+            menuLink.nextSibling.nextSibling.classList.toggle('submenu-open');
+        }
+    </script>
+</head>
+<body>
+    <div class="toggle-wrapper">
+        <button class="toggle toggle-1" onclick="toggleMenu();">absolute</button>
+        <button class="toggle toggle-2" onclick="toggleMenu();">Fixed</button>
+        <button class="toggle toggle-3" onclick="toggleMenu();">relative</button>
+        <button class="toggle toggle-4" onclick="toggleMenu();">sticky</button>
+        <button class="toggle toggle-5" onclick="toggleMenu();">static</button>
+    </div>
+
+    <div class="menu">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+       <a class="Logo-title" href="https://www.google.com/">
+        <img src="Logo.jpg" alt="Logo" width="90">
+       </a>
+        <div class="menu-section">
+            <p class="menu-section-title">Analytics</p>
+            <a href="javascript:void(0);" class="menu-link" onclick="toggleSubmenu(this)">
+                <span class="menu-icon">
+                    <i data-feather="circle"></i>
+                </span>
+                Dashboard
+                <span class="arrow-wrapper">
+                    <i data-feather="arrow-left"></i>
+                </span>
+            </a>
+            <div class="submenu">
+                <a href="" class="submenu-link">Dashboard sub 1</a>
+                <a href="" class="submenu-link">Dashboard sub 2</a>
+                <a href="" class="submenu-link">Dashboard sub 3</a>
+                <a href="" class="submenu-link">Dashboard sub 4</a>
+            </div>
+            <a href="https://www.google.com/" class="menu-link">
+                <img class="menu-link-image" src="Performance.jpg" alt="" width="45">
+                Performance
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+            </a>
+        </div>
+        <div class="Content">
+            <p class="menu-section-title">Content</p>
+
+            <a href="https://www.google.com/" class="menu-link">
+                <img class="menu-link-image" src="Guides.jpg" alt="" width="45">
+                Guides
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+            </a>
+
+            <a href="https://www.google.com/" class="menu-link">
+                <img class="menu-link-image" src="Hotspot.webp" alt="" width="45">
+                Hotspot
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+            </a>
+
+            <a href="https://www.google.com/" class="menu-link">
+                <img class="menu-link-image" src="Checklist.jpg" alt="" width="45">
+                Checklist
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+            </a>
+
+            <a href="https://www.google.com/" class="menu-link">
+                <img class="menu-link-image" src="NPS.jpg" alt="" width="45">
+                NPS
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+            </a>
+        </div>
+        <div class="Customization">
+            <p class="menu-section-title">Customization</p>
+
+            <a href="https://www.google.com/" class="menu-link">
+                <img class="menu-link-image" src="Segments.png" alt="" width="45">
+                Segments
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+            </a>
+
+            <a href="https://www.google.com/" class="menu-link">
+                <img class="menu-link-image" src="Themes.png" alt="" width="45">
+                Themes
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+            </a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
